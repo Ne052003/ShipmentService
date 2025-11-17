@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: shipmentService
+
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/arka_db
+    username: Neoly
+    password: MYSQLexis_22
+
+server:
+  port: 8081

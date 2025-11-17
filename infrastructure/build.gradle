@@ -1,0 +1,17 @@
+plugins {
+    id 'java-library'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+dependencies {
+    api project(':domain')
+    api 'org.springframework.data:spring-data-r2dbc'
+
+    annotationProcessor 'org.projectlombok:lombok'
+}
+

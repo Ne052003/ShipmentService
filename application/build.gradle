@@ -1,0 +1,23 @@
+plugins {
+    id 'org.springframework.boot' version '3.5.5'
+}
+
+dependencies {
+    implementation project(":infrastructure")
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+}
+
+springBoot {
+    mainClass = 'com.neoapps.App'
+}
+
+jar {
+    enabled = false
+}
+
+bootJar {
+    enabled = true
+    archiveFileName = 'Shipments-MS-App.jar'
+}
