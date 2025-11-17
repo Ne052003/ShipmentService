@@ -12,6 +12,8 @@ dependencies {
     api project(':domain')
     api 'org.springframework.data:spring-data-r2dbc'
 
+    implementation 'io.awspring.cloud:spring-cloud-aws-starter-sns:3.4.0'
+
     annotationProcessor 'org.projectlombok:lombok'
 }
 

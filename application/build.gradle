@@ -7,6 +7,8 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    runtimeOnly 'io.asyncer:r2dbc-mysql'
 }
 
 springBoot {
